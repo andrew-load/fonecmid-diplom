@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1eeb67b9-b999-4050-82f3-ddd96d9aa468">
+  <producedTypes>
+    <refType typeId="49c137f7-7813-43ce-b42d-e86613a14792" valueTypeId="c2d4499a-9700-4167-9278-f5fe417c97fe"/>
+    <listType typeId="f144765d-afc9-448b-a16e-a6b805aeb866" valueTypeId="ae815f1b-1d1a-4790-8e71-67068b24414d"/>
+    <managerType typeId="82fc01f5-4ccf-4b6e-ac1f-dadf200cc45e" valueTypeId="d3450bce-7f40-4c99-b364-e331d0ed7437"/>
+  </producedTypes>
+  <name>АбонентскоеОбслуживание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Абонентское обслуживание</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>
