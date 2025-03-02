@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="456f8856-d913-4c14-8705-20f169058cae">
+  <name>ВКМ_АвтосозданиеИЗаполнениеРеализаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автосоздание и заполнение реализаций</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

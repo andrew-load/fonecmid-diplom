@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62825e8b-0599-4bdd-a0dd-b2ad0000e5fe">
+  <producedTypes>
+    <objectType typeId="9112feff-a7e3-4835-97ae-24e60db2ec91" valueTypeId="5d816ab5-681c-44b0-840c-e10dec26a5f3"/>
+    <refType typeId="03334ddd-80b5-44c9-847f-062a4da96e34" valueTypeId="7d49d7e7-ac52-4e91-bdf9-1de1903ec4d0"/>
+    <selectionType typeId="64fd57af-6ac9-404b-a700-188108facc3a" valueTypeId="475feb53-bd57-4f86-9259-fbda31610a7f"/>
+    <listType typeId="77c93b67-9650-4300-b281-88ee3cfaaaf9" valueTypeId="4a02c3bb-6f5c-473e-b68e-0f3c1b33d0d5"/>
+    <managerType typeId="4dcd3aac-14ae-4fe8-a90e-d263aad96f39" valueTypeId="7de05ddf-ba94-416c-9f8b-206f9bf08d41"/>
+  </producedTypes>
+  <name>ВКМ_УведомленияТелеграмБоту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления телеграм боту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ВКМ_УведомленияТелеграмБоту.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a94090ea-8f4d-4787-96fe-743296cb2ab9">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b3130a94-7d20-4987-a59c-aaa1924ce629">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

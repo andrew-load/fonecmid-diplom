@@ -130,9 +130,9 @@
       <field>Document.ЗаказПокупателя.Attribute.Организация</field>
     </choiceParameterLinks>
     <choiceParameters>
-      <name>Отбор.ВидДоговора</name>
+      <name>Отбор.Владелец</name>
       <value xsi:type="core:ReferenceValue">
-        <value>Enum.ВидыДоговоровКонтрагентов.EnumValue.Покупатель</value>
+        <value>Catalog.ГруппыПользователей.ВсеПользователи</value>
       </value>
     </choiceParameters>
     <fillFromFillingValue>true</fillFromFillingValue>

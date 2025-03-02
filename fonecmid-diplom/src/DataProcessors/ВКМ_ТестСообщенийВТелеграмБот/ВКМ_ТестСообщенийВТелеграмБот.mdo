@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf22d98a-1d70-47bc-87e7-51aaf9cd6916">
+  <producedTypes>
+    <objectType typeId="f488379e-5d51-4581-92dd-b66794102b35" valueTypeId="4735a25c-836d-4994-ba13-308d1232e5f5"/>
+    <managerType typeId="c753857b-b996-41d8-a2f2-ff74028302b6" valueTypeId="c4a0bc51-659d-43ee-bcdb-33d6e6051f9a"/>
+  </producedTypes>
+  <name>ВКМ_ТестСообщенийВТелеграмБот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тест сообщений в телеграм бот</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_ТестСообщенийВТелеграмБот.Form.Форма</defaultForm>
+  <forms uuid="98f960c3-7f4c-4ac8-bc60-0a27b3c70d8b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

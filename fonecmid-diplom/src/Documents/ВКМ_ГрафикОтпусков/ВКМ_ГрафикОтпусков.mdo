@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24ddb20d-d6d3-4f41-81a3-2de308220deb">
+  <producedTypes>
+    <objectType typeId="88f1c3d4-fd26-4cdb-b152-b98a5d9a6331" valueTypeId="3dd2fbb8-3497-4979-ac76-60b619696af4"/>
+    <refType typeId="f90a2c36-fd9a-4164-91d6-9ddd227dab70" valueTypeId="593acd0e-42e9-4fe5-806d-b3eda8ca0593"/>
+    <selectionType typeId="f5b979ae-cd35-41a8-ba46-686d5654d104" valueTypeId="009b22ec-033d-4665-88cb-dc7a8584daa4"/>
+    <listType typeId="5f9322b6-ce7d-480f-bb44-aa1bc7a14701" valueTypeId="0a9e6a2c-4a25-416a-8598-0d6df8b810b7"/>
+    <managerType typeId="3ece2585-4148-4ba0-a71d-96bc01c9a0e4" valueTypeId="93eef940-c389-4a2d-a88d-c8e563242105"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>График отпусков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ГрафикОтпусков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5f58f1d1-440c-4657-a7ea-19bda0eec8d4">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="35867662-8cb0-4a79-a3f6-08a247e2a3ae">
+    <producedTypes>
+      <objectType typeId="62fd605a-1f7b-4ebc-a6a1-d1ae05502009" valueTypeId="48df0526-5f79-4299-b2e2-728e0763e358"/>
+      <rowType typeId="31b91e16-c3eb-48ea-93b8-237ec24cf762" valueTypeId="190fdd74-5e59-4599-9f4d-e0df1f6b28d0"/>
+    </producedTypes>
+    <name>ОтпускаСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпуска сотрудников</value>
+    </synonym>
+    <attributes uuid="5086efa5-83d6-4ce8-9539-6f4509ebcc67">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="47c1f5c4-f792-4e12-a3f6-5c344fbcf529">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ef675d6a-949f-44c3-a575-fcbd3e1b45c2">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

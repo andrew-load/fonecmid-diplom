@@ -378,5 +378,6 @@
   <content>CommonPicture.ВажностьНеЗадана</content>
   <content>CommonPicture.ВажностьНизкая</content>
   <content>CommonModule.ФизическиеЛицаКлиентСерверЛокализация</content>
+  <content>ScheduledJob.ВКМ_ОтправкаИУдалениеУведомлениеВТелеграмБот</content>
   <parentSubsystem>Subsystem.СтандартныеПодсистемы</parentSubsystem>
 </mdclass:Subsystem>

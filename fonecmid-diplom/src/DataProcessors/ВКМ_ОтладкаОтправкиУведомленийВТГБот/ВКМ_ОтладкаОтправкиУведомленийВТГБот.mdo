@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9b48a15-486c-41e0-90b9-f3fd62764183">
+  <producedTypes>
+    <objectType typeId="2b52266e-441e-4b36-aa9f-1177c96ef7b7" valueTypeId="a7961185-acee-4107-833b-d306e84ff678"/>
+    <managerType typeId="f0c2752e-dd73-4a5b-8489-625aa1669288" valueTypeId="4a6092bc-281d-4c44-a855-032af8d29a31"/>
+  </producedTypes>
+  <name>ВКМ_ОтладкаОтправкиУведомленийВТГБот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отладка отправки уведомлений ВТГБот</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_ОтладкаОтправкиУведомленийВТГБот.Form.Форма</defaultForm>
+  <forms uuid="14074ded-41f3-4fcd-9878-50ad0fe7ca22">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

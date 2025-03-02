@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="627f76fb-3c40-49f3-955d-ca7bcf41275c">
+  <name>Боты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Боты</value>
+  </synonym>
+  <rootURL>bots</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="da1f25d5-04d8-4e4b-90b6-e123db7d4465">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="28b51675-2733-44a8-9d99-a1888e3b4a0c">
+      <name>GETPing</name>
+      <synonym>
+        <key>ru</key>
+        <value>GETPing</value>
+      </synonym>
+      <handler>PingGETPing</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="40020bd4-601a-43ef-995d-3c8b22b2f9db">
+    <name>Send</name>
+    <synonym>
+      <key>ru</key>
+      <value>Send</value>
+    </synonym>
+    <template>/send</template>
+    <methods uuid="df14de9c-8cb4-4c98-a53a-17ed1dba800b">
+      <name>PostSend</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post send</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>SendPostSend</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
