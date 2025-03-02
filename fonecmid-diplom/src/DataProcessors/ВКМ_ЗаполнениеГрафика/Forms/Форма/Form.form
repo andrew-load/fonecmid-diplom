@@ -271,8 +271,7 @@
     </title>
     <id>4</id>
     <valueType>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
     </valueType>
     <view>
       <common>true</common>
