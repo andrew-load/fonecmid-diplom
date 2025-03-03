@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d16ae3c-2907-4ec3-9446-4237f2c70649">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e040cc3-aaff-49e4-885b-ec94076495a4">
   <producedTypes>
-    <objectType typeId="69862ee8-a474-4abc-8383-6973703ecb2d" valueTypeId="e2c82bb5-c67f-47dd-8332-211aaa550f15"/>
-    <refType typeId="50f22fc6-96f3-46dc-9591-79839e0a7b52" valueTypeId="81c06250-9294-4eb7-8757-214b233a32f9"/>
-    <selectionType typeId="92dc9829-4b9f-4457-85cc-c73a4bd984ee" valueTypeId="5e88d8bc-24ee-4e0a-aea7-9547b6071a56"/>
-    <listType typeId="580a35e3-ec9d-4dfa-8b3d-ad5c77296bd8" valueTypeId="b5fc17cf-ee77-4448-890d-5643c4a92c42"/>
-    <managerType typeId="d36fb6f9-c007-4a69-83b7-062fbff67863" valueTypeId="a6c0446e-70ab-430d-bd25-8589a636700e"/>
+    <objectType typeId="eb8af47f-2838-440a-8b50-bca0e2c3365d" valueTypeId="1e62595a-f8a1-457b-ae1a-59c4a9249d72"/>
+    <refType typeId="34d8578d-3262-465f-9872-5b0eb6be94ef" valueTypeId="dd51591d-41f9-4e57-a61e-150be574bb2b"/>
+    <selectionType typeId="c65fd28e-a1ba-47dd-813e-a68c8123a032" valueTypeId="9483e373-efcb-4e8a-bf7a-c00cf3fa3e78"/>
+    <listType typeId="e477fb48-f58f-4155-a9b2-1bb3ea9b9ac5" valueTypeId="e0a84b40-48fe-4532-b012-e3398a2672ed"/>
+    <managerType typeId="3b3dc354-ba67-49ff-9e19-241f5f8107e8" valueTypeId="8d6adf4f-bfbd-4c96-8d4e-36566326a4fe"/>
   </producedTypes>
-  <name>ВКМ_НачисленияЗарплаты</name>
+  <name>ВКМ_НачислениеЗарплаты</name>
   <synonym>
     <key>ru</key>
-    <value>Начисления зарплаты</value>
+    <value>Начисление зарплаты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ВКМ_НачисленияЗарплаты.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ВКМ_НачислениеЗарплаты.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Документ начисление зарплаты</value>
+    <value>Начисление зарплаты</value>
   </objectPresentation>
   <listPresentation>
     <key>ru</key>
-    <value>Документы начисления зарплаты</value>
+    <value>Документы начисления запрплаты</value>
   </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
-  <numberPeriodicity>Month</numberPeriodicity>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ВКМ_НачисленияЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <defaultObjectForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаСписка</defaultListForm>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <forms uuid="abd6e6a9-de95-4f0c-91f9-cd6252b7e424">
+  <forms uuid="64f0fe79-da1e-408f-9eac-c4f5afc9c063">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
@@ -45,17 +45,26 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <tabularSections uuid="50485eb1-6689-495e-8ade-d29079e6082b">
+  <forms uuid="00140e92-a3fc-4901-908b-6ffdd01c8233">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="a1900cae-18dd-4e0b-a8df-2666d9b97758">
     <producedTypes>
-      <objectType typeId="9743e78b-54ca-4a3c-ad1b-6e3f8397bfec" valueTypeId="07e5e8b5-c1b1-4da5-bde1-010a064982e5"/>
-      <rowType typeId="02156f26-f241-4b58-97be-ee3c97759b7c" valueTypeId="942e0abf-6a72-4fd5-a153-cf62974f7608"/>
+      <objectType typeId="651c8c49-a162-40e4-8f37-69bda33842af" valueTypeId="74b01808-f855-40dc-98d7-4dcc0152b733"/>
+      <rowType typeId="df56692a-2772-4294-961f-216a11d73b2c" valueTypeId="43d164ad-21bc-436a-bfd3-bcafbe867a5d"/>
     </producedTypes>
     <name>ОсновныеНачисления</name>
     <synonym>
       <key>ru</key>
       <value>Основные начисления</value>
     </synonym>
-    <attributes uuid="24c54992-2f79-4121-bd1d-7ca5faad85a6">
+    <attributes uuid="7e87c78c-04e7-4377-9d23-e5b7f376829e">
       <name>ДатаНачала</name>
       <synonym>
         <key>ru</key>
@@ -72,7 +81,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="80bc80db-110e-45ae-9ab5-2dfedb5dab9b">
+    <attributes uuid="2b05c999-33ba-4239-b16f-14137efc3399">
       <name>ДатаОкончания</name>
       <synonym>
         <key>ru</key>
@@ -89,21 +98,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="dc9fe511-223e-4217-893a-167874abba0d">
-      <name>Подразделение</name>
-      <synonym>
-        <key>ru</key>
-        <value>Подразделение</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ВКМ_Подразделения</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="3cefb334-85cd-43ad-ba2c-b47f80c2ca4a">
+    <attributes uuid="57b03076-6282-4588-ac8d-e904be10bbc4">
       <name>Сотрудник</name>
       <synonym>
         <key>ru</key>
@@ -117,7 +112,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="8d5c0dcf-398e-40e5-848a-72d3bdd091cb">
+    <attributes uuid="97be815d-ff02-45cb-9f86-62212d445a6c">
       <name>ВидРасчета</name>
       <synonym>
         <key>ru</key>
@@ -131,7 +126,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="978d7586-4231-4beb-9446-28f96ff98497">
+    <attributes uuid="51a0b74a-055e-40b7-978d-0e0c93a4a472">
       <name>Оклад</name>
       <synonym>
         <key>ru</key>
@@ -145,21 +140,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="611eac61-c8ad-41a0-a8e5-bf5a57cb629d">
-      <name>ПроцентОтРабот</name>
-      <synonym>
-        <key>ru</key>
-        <value>Процент от работ</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ВКМ_ДенежнаяСумма</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="607f57a8-a9d6-4ebd-a983-56e56277d217">
+    <attributes uuid="fe30645c-242a-4ed2-8564-21be433be510">
       <name>НДФЛ</name>
       <synonym>
         <key>ru</key>
@@ -173,14 +154,48 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="6d852b4b-278a-43d5-9bb2-dab8109c0ecb">
-      <name>ГрафикРаботы</name>
+    <attributes uuid="1c87cf08-138e-47bd-8a6f-9b1da238dd51">
+      <name>ПроцентОтРабот</name>
       <synonym>
         <key>ru</key>
-        <value>График работы</value>
+        <value>Процент от работ</value>
       </synonym>
       <type>
-        <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+        <types>String</types>
+        <stringQualifiers>
+          <length>3</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="08142517-dff6-44df-be33-bdb3db2a9e1b">
+      <name>Результат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ВКМ_ДенежнаяСумма</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1e793673-8728-4fc7-9b22-9d1079b5b624">
+      <name>ДнейОтпуска</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дней отпуска</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

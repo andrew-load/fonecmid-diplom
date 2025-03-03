@@ -21,7 +21,6 @@
   <content>DataProcessor.ВКМ_ОтладкаОтправкиУведомленийВТГБот</content>
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
-  <content>Document.ВКМ_НачисленияЗарплаты</content>
   <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
   <content>Document.ВКМ_ВыплатаЗарплаты</content>
   <content>Document.ВКМ_ГрафикОтпусков</content>
@@ -35,4 +34,5 @@
   <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
   <content>Catalog.ВКМ_Подразделения</content>
   <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
 </mdclass:Subsystem>

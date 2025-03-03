@@ -36,32 +36,22 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="30ce3134-e1e9-4c60-8570-ceb026bcf362">
-    <name>Показатель</name>
+  <resources uuid="ba96dbea-141f-4f7c-a985-d4ae39decd9f">
+    <name>ДнейОтпуска</name>
     <synonym>
       <key>ru</key>
-      <value>Показатель</value>
+      <value>Дней отпуска</value>
     </synonym>
     <type>
-      <types>DefinedType.ВКМ_ДенежнаяСумма</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-  </attributes>
-  <attributes uuid="91b07fbd-280f-47ea-bd1e-5d2b10ab95e1">
-    <name>ГрафикРаботы</name>
-    <synonym>
-      <key>ru</key>
-      <value>График работы</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
+  </resources>
   <dimensions uuid="41008c3c-1df6-4ca5-9010-af4735b42758">
     <name>Сотрудник</name>
     <synonym>
@@ -70,19 +60,6 @@
     </synonym>
     <type>
       <types>CatalogRef.Пользователи</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </dimensions>
-  <dimensions uuid="095e3ef8-352b-4c21-a7ac-80e53a8c828c">
-    <name>Подразделение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подразделение</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВКМ_Подразделения</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -40,7 +40,10 @@
       <value>Процент от работ</value>
     </synonym>
     <type>
-      <types>DefinedType.ВКМ_ДенежнаяСумма</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

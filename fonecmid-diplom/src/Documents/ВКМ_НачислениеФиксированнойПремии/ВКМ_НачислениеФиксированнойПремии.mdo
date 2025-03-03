@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a281a67a-44e4-48e2-b554-913e774faf03">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a281a67a-44e4-48e2-b554-913e774faf03">
   <producedTypes>
     <objectType typeId="9e9b95e1-1dea-4594-a43f-8524675da12a" valueTypeId="048b5e02-d525-4102-bdbe-809514708321"/>
     <refType typeId="b9d4d2ec-1bfd-46c4-b6ae-67b307114c96" valueTypeId="147349dc-e130-41fd-8052-93ec0286c5f8"/>
@@ -26,4 +26,74 @@
   <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="5e9af691-1436-47f5-b9bd-dc09de7e2923">
+    <producedTypes>
+      <objectType typeId="71d94025-e219-4043-9fb5-60a5126ee129" valueTypeId="5d2029d5-e2ef-4b1f-bf32-95f64c677fc8"/>
+      <rowType typeId="e864cfc8-962a-4813-8079-1b5e21e6e9ab" valueTypeId="79e50e1f-10c8-4b0e-bd20-6b97e84eca0d"/>
+    </producedTypes>
+    <name>Премии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Премии</value>
+    </synonym>
+    <attributes uuid="3bf5037e-1ed5-42c7-bfb0-3852063aa94e">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b4d22252-bc4f-4378-ac43-ddc914a9ab96">
+      <name>Премия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Премия</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ВКМ_ДенежнаяСумма</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="62a1cd23-3e89-4d09-873b-fe89d9d20028">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ВКМ_ДополнительныеНачисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ac387836-e6e4-4f9b-b997-d5e13b063249">
+      <name>ДатаПремии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата премии</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>
