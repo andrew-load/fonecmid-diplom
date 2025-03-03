@@ -34,6 +34,7 @@
   <defaultObjectForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаСписка</defaultListForm>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <forms uuid="64f0fe79-da1e-408f-9eac-c4f5afc9c063">
