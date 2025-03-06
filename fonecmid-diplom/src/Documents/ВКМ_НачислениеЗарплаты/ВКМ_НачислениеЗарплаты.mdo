@@ -35,6 +35,7 @@
   <defaultListForm>Document.ВКМ_НачислениеЗарплаты.Form.ФормаСписка</defaultListForm>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <forms uuid="64f0fe79-da1e-408f-9eac-c4f5afc9c063">
@@ -180,23 +181,6 @@
       </synonym>
       <type>
         <types>DefinedType.ВКМ_ДенежнаяСумма</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="1e793673-8728-4fc7-9b22-9d1079b5b624">
-      <name>ДнейОтпуска</name>
-      <synonym>
-        <key>ru</key>
-        <value>Дней отпуска</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>3</precision>
-        </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

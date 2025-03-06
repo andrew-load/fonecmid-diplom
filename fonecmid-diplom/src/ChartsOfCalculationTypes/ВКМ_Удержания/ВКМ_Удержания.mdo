@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78d3eb0a-5b86-4870-b06b-dab33bf7450b">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78d3eb0a-5b86-4870-b06b-dab33bf7450b">
   <producedTypes>
     <objectType typeId="34e90ab1-1808-4e4a-a416-fd7a6ef009ef" valueTypeId="62338263-c467-4d36-b6f0-83f5cd01907b"/>
     <refType typeId="1f685da1-ad75-4039-9e36-29b040a3c40c" valueTypeId="ae8b5f75-b37f-49e6-9e8d-f10590bf1b85"/>
@@ -33,4 +33,13 @@
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="453a8c57-62c3-4a95-9f4c-cdea0ce58dbf">
+      <name>НДФЛ</name>
+      <description>НДФЛ</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+    </items>
+  </predefined>
 </mdclass:ChartOfCalculationTypes>
