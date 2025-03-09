@@ -55,6 +55,8 @@
       <code xsi:type="core:StringValue">
         <value>2</value>
       </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</base>
     </items>
     <items id="d9070e19-ece7-48f9-8ab1-c20210327d18">
       <name>Процент</name>
