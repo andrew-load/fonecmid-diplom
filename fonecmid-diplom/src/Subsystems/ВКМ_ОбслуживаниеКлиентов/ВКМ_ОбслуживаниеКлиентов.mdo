@@ -35,4 +35,8 @@
   <content>Catalog.ВКМ_Подразделения</content>
   <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
   <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
+  <content>Report.ВКМ_РасчетыCCотрудниками</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
 </mdclass:Subsystem>
