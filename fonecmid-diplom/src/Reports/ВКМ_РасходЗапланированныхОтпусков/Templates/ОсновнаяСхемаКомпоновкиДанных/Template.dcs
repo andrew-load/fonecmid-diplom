@@ -11,91 +11,49 @@
 			<field>Сотрудник</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ПлановыйОтпуск</dataPath>
-			<field>ПлановыйОтпуск</field>
+			<dataPath>ДнейОтпуска</dataPath>
+			<field>ДнейОтпуска</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Плановый отпуск</v8:content>
+					<v8:content>Дней отпуска всего</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ФактическийОтпуск</dataPath>
-			<field>ФактическийОтпуск</field>
+			<dataPath>ИзрасходованоДнейОтпуска</dataPath>
+			<field>ИзрасходованоДнейОтпуска</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Фактический отпуск</v8:content>
+					<v8:content>Израсходовано дней отпуска</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсталосьДнейОтпуска</dataPath>
+			<field>ОсталосьДнейОтпуска</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Осталось дней отпуска</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ВКМ_ГрафикОтпусковОтпускаСотрудников.Сотрудник КАК Сотрудник,
-	СУММА(РАЗНОСТЬДАТ(ВКМ_ГрафикОтпусковОтпускаСотрудников.ДатаНачала, ВКМ_ГрафикОтпусковОтпускаСотрудников.ДатаОкончания, ДЕНЬ)) КАК ПлановыйОтпуск,
-	МАКСИМУМ(ЕСТЬNULL(ВКМ_ОсновныеНачисленияДанныеГрафика.ОтработаноДней, 0)) КАК ФактическийОтпуск
+	ВКМ_КоличествоДнейОтпускаОбороты.Сотрудник КАК Сотрудник,
+	ЕСТЬNULL(ВКМ_КоличествоДнейОтпускаОбороты.КоличествоДнейОборот, 0) КАК ДнейОтпуска,
+	ЕСТЬNULL(ВКМ_ОсновныеНачисленияДанныеГрафика.ОтработаноДней, 0) КАК ИзрасходованоДнейОтпуска,
+	ЕСТЬNULL(ВКМ_КоличествоДнейОтпускаОбороты.КоличествоДнейОборот, 0) -
+		ЕСТЬNULL(ВКМ_ОсновныеНачисленияДанныеГрафика.ОтработаноДней, 0) КАК ОсталосьДнейОтпуска
 ИЗ
-	Документ.ВКМ_ГрафикОтпусков.ОтпускаСотрудников КАК ВКМ_ГрафикОтпусковОтпускаСотрудников
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ВКМ_ОсновныеНачисления.ДанныеГрафика(ВидРасчета = &amp;ВидРасчета) КАК ВКМ_ОсновныеНачисленияДанныеГрафика
-		ПО (ВКМ_ГрафикОтпусковОтпускаСотрудников.Сотрудник = ВКМ_ОсновныеНачисленияДанныеГрафика.Сотрудник)
-ГДЕ
-	ВКМ_ГрафикОтпусковОтпускаСотрудников.ДатаНачала &gt;= &amp;ДатаНачала
-	И ВКМ_ГрафикОтпусковОтпускаСотрудников.ДатаОкончания &lt;= &amp;ДатаОкончания
-
-СГРУППИРОВАТЬ ПО
-	ВКМ_ГрафикОтпусковОтпускаСотрудников.Сотрудник</query>
+	РегистрНакопления.ВКМ_КоличествоДнейОтпуска.Обороты(&amp;НачалоПериода, &amp;КонецПериода,,) КАК
+		ВКМ_КоличествоДнейОтпускаОбороты
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрРасчета.ВКМ_ОсновныеНачисления.ДанныеГрафика(ВидРасчета = &amp;ВидРасчета) КАК
+			ВКМ_ОсновныеНачисленияДанныеГрафика
+		ПО ВКМ_КоличествоДнейОтпускаОбороты.Сотрудник = ВКМ_ОсновныеНачисленияДанныеГрафика.Сотрудник</query>
 	</dataSet>
-	<parameter>
-		<name>ДатаНачала</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Дата начала</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>Date</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
-	</parameter>
-	<parameter>
-		<name>ДатаОкончания</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Дата окончания</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>Date</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<useRestriction>true</useRestriction>
-		<expression>&amp;СтандартныйПериод.ДатаОкончания</expression>
-	</parameter>
-	<parameter>
-		<name>ВидРасчета</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Вид расчета</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</v8:Type>
-		</valueType>
-		<useRestriction>true</useRestriction>
-		<availableValue>
-			<value xsi:type="dcscor:DesignTimeValue">ПланВидовРасчета.ВКМ_ОсновныеНачисления.Отпуск</value>
-		</availableValue>
-	</parameter>
 	<parameter>
 		<name>СтандартныйПериод</name>
 		<title xsi:type="v8:LocalStringType">
@@ -110,8 +68,61 @@
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
 	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;СтандартныйПериод.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ВидРасчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид расчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="dcscor:DesignTimeValue">ПланВидовРасчета.ВКМ_ОсновныеНачисления.Оклад</value>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="dcscor:DesignTimeValue">ПланВидовРасчета.ВКМ_ОсновныеНачисления.Отпуск</value>
+		</availableValue>
+	</parameter>
 	<settingsVariant>
-		<dcsset:name>Основной</dcsset:name>
+		<dcsset:name>Запланированные отпуска</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
@@ -119,28 +130,39 @@
 					<dcsset:field>Сотрудник</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ПлановыйОтпуск</dcsset:field>
+					<dcsset:field>ДнейОтпуска</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ФактическийОтпуск</dcsset:field>
+					<dcsset:field>ИзрасходованоДнейОтпуска</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОсталосьДнейОтпуска</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ДатаНачала</dcscor:parameter>
-					<dcsset:userSettingID>8394a81a-c380-4921-9713-4b7da46865ec</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ДатаОкончания</dcscor:parameter>
-					<dcsset:userSettingID>91035b96-9f0a-420b-8c88-e6baad0ad0bf</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>СтандартныйПериод</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
 					<dcsset:userSettingID>bb490034-bd7f-4099-a508-bc5845c1692f</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидРасчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:availableValues xsi:type="v8:ValueListType">
+							<v8:valueType>
+								<v8:Type xmlns:d9p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d9p1:ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</v8:Type>
+							</v8:valueType>
+							<v8:lastId xsi:type="xs:decimal">0</v8:lastId>
+							<v8:item>
+								<v8:id xsi:type="xs:decimal">0</v8:id>
+							</v8:item>
+						</v8:availableValues>
+						<v8:lastId xsi:type="xs:decimal">0</v8:lastId>
+					</dcscor:value>
+					<dcsset:userSettingID>76ee5124-1f7c-4ebd-bcfd-2f60c52bea60</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

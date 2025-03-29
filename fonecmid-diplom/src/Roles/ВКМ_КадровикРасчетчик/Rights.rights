@@ -4,22 +4,105 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.Attribute.ГрафикРаботы</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CalculationRegister.ВКМ_Удержания</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.RegistrationPeriod</name>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.ReversingEntry</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.EndOfBasePeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.BegOfBasePeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.EndOfActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.BegOfActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.ActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.CalculationType</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.Resource.Сумма</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -29,16 +112,85 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.RegistrationPeriod</name>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.ReversingEntry</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.EndOfBasePeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.BegOfBasePeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.EndOfActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.BegOfActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.ActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.CalculationType</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -141,22 +293,105 @@
 		</right>
 	</object>
 	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.Resource.Результат</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>CalculationRegister.ВКМ_ДополнительныеНачисления</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.RegistrationPeriod</name>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.ReversingEntry</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.Active</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.EndOfBasePeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.BegOfBasePeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.EndOfActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.BegOfActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.ActionPeriod</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.CalculationType</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.Dimension.Сотрудник</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -167,26 +402,84 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.Контрагент</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Dimension.ДоговорКонтрагента</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления.Dimension.Сотрудник</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.Dimension.Сотрудник</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.Resource.СуммаКОплате</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardAttribute.RecordType</name>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardAttribute.Active</name>
 		<right>
-			<name>TotalsControl</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -289,6 +582,13 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.Resource.ЧасовКОплате</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ВКМ_РасходЗапланированныхОтпусков</name>
 		<right>
 			<name>Use</name>
@@ -297,6 +597,27 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.Resource.Результат</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.КоличествоЧасов</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.Resource.ОтработаноДней</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -311,10 +632,6 @@
 		</right>
 		<right>
 			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Delete</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -400,6 +717,13 @@
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.Dimension.Сотрудник</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -502,6 +826,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления.Attribute.Показатель</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.ВКМ_РасчетыCCотрудниками</name>
 		<right>
 			<name>Use</name>
@@ -510,6 +841,13 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.Resource.СуммаКОплате</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -562,22 +900,105 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.PredefinedDataName</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Predefined</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Ref</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.IsFolder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Owner</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Parent</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Description</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Code</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.Active</name>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.LineNumber</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -587,20 +1008,50 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardAttribute.Active</name>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardAttribute.LineNumber</name>
 		<right>
-			<name>TotalsControl</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardAttribute.Recorder</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardAttribute.Period</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_Удержания.Resource.Результат</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.Dimension.Сотрудник</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 </Rights>

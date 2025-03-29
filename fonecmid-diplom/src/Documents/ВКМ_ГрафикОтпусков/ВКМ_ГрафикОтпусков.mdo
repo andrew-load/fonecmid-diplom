@@ -25,6 +25,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаСписка</defaultListForm>
+  <registerRecords>AccumulationRegister.ВКМ_КоличествоДнейОтпуска</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="5f58f1d1-440c-4657-a7ea-19bda0eec8d4">

@@ -418,13 +418,4 @@
       <value>Акт об оказании услуг</value>
     </synonym>
   </templates>
-  <commands uuid="4c96b23a-ee7d-49df-8699-33c713db270d">
-    <name>Печать</name>
-    <group>FormCommandBarImportant</group>
-    <commandParameterType>
-      <types>DocumentRef.РеализацияТоваровУслуг</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-  </commands>
 </mdclass:Document>
