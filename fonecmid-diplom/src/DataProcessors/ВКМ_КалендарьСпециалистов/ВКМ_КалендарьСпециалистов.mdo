@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2056ff9-8a04-48c0-a8f4-6dc3864948cf">
+  <producedTypes>
+    <objectType typeId="bc880541-765e-4bac-9199-8512a36c1117" valueTypeId="5515f043-4d0f-4df2-a9db-8aba610ba30f"/>
+    <managerType typeId="543453f6-3b8b-4eb9-8683-68c0d7cca18e" valueTypeId="70059aa3-6efc-4265-8fa5-195b31a4d609"/>
+  </producedTypes>
+  <name>ВКМ_КалендарьСпециалистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Календарь специалистов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_КалендарьСпециалистов.Form.Форма</defaultForm>
+  <attributes uuid="70487752-3a65-458d-8d9b-de3b89227373">
+    <name>Специалист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Специалист</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8969bb17-41e1-4cf7-97c8-22deea641847">
+    <name>КалендарьСпециалиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Календарь специалиста</value>
+    </synonym>
+    <type>
+      <types>Planner</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="378b23b9-bad0-4a62-a427-1444957e7432">
+    <name>ПериодКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период календаря</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=MM.yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="099b1d53-33a9-47c0-8943-f7bdb35813c1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

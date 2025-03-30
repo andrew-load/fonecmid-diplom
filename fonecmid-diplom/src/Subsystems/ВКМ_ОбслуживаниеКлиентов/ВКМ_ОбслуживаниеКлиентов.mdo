@@ -40,4 +40,5 @@
   <content>Report.ВКМ_РасчетыCCотрудниками</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>AccumulationRegister.ВКМ_КоличествоДнейОтпуска</content>
+  <content>DataProcessor.ВКМ_КалендарьСпециалистов</content>
 </mdclass:Subsystem>

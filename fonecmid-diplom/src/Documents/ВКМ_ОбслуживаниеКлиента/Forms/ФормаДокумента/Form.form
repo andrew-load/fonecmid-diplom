@@ -1065,6 +1065,10 @@
       <event>BeforeWriteAtServer</event>
       <name>ПередЗаписьюНаСервере</name>
     </handlers>
+    <handlers>
+      <event>AfterWrite</event>
+      <name>ПослеЗаписи</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
