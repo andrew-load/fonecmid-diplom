@@ -225,10 +225,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="ef6ab4e6-547b-47c0-8cf7-837887d6ae81">
-    <name>СохрПер</name>
+    <name>ЭтоНеНовыйОбслуживаниеКлиента</name>
     <synonym>
       <key>ru</key>
-      <value>Сохр пер</value>
+      <value>Это не новый обслуживание клиента</value>
     </synonym>
     <type>
       <types>Boolean</types>

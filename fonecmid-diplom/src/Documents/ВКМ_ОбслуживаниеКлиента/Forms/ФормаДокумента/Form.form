@@ -1069,6 +1069,10 @@
       <event>AfterWrite</event>
       <name>ПослеЗаписи</name>
     </handlers>
+    <handlers>
+      <event>AfterWriteAtServer</event>
+      <name>ПослеЗаписиНаСервере</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
